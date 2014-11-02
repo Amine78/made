@@ -44,6 +44,14 @@ while ( $loop->have_posts() ) : $loop->the_post();
   echo '</div>';
 endwhile;
 ?>
+<?php 
+if ( has_post_thumbnail() ) {
+  $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );
+  echo '<a href="' . $large_image_url[0] . '" title="' . the_title_attribute( 'echo=0' ) . '">';
+  the_post_thumbnail( 'thumbnail' );
+  echo '</a>';
+}
+?>
 			<?php endwhile; ?>
 
 

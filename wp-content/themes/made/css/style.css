@@ -1,10 +1,29 @@
 /*
-Theme Name: Made
+Theme Name:made
+Description:Un thème bidon pour apprendre Wordpress
+Author:Amine,Matthieu,Laura
+Version:1.0
 
-Description: Theme made iim
-Version: 0.1
-Author: Francis Chouquet
- 
-Creation Theme by Francis Chouquet || http://www.fran6art.com
- 
 */
+
+.article img {width : 100%}
+
+body{padding-top : 50px;}
+
+div.etudiants{
+	height: 300px;
+	width: 100px;
+	float: left;
+	background :   no-repeat no-repeat center center fixed ;  
+  -webkit-background-size : cover ; 
+  -moz-background-size : cover ; 
+  -o-background-size : cover ; 
+  background-size : cover ; 
+}
+a.miniature{
+	height: 200px;
+	width: 100px;
+}
+body{
+	background: #B3BAB9;
+}
