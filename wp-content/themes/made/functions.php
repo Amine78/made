@@ -7,19 +7,19 @@ if(function_exists('add_theme_support')) {
 function cpt_init() {
 
     $labels = array(
-        'name' => 'Ligne 1',
+        'name' => 'Ajouter un article',
         'singular_name' => 'ligne1',
-        'add_new' => 'Ajouter sur la ligne 1',
-        'add_new_item' => 'Ajouter une nouvelle photo sur sur la ligne 1',
-        'edit_item' => 'Editer une photo sur la ligne 1',
-        'new_item' => 'Nouvelle photo sur la ligne 1',
-        'all_items' => 'Toutes les photos sur la ligne 1',
-        'view_item' => 'Voir sur la ligne 1',
-        'search_items' => 'Chercher photo sur la ligne 1',
-        'not_found' =>  'Aucune photo trouvée sur la ligne 1',
-        'not_found_in_trash' => 'Aucune photo trouvée dans la corbeille',
+        'add_new' => 'Ajouter un article',
+        'add_new_item' => 'Ajouter une nouvelle photo pour l&apos;article',
+        'edit_item' => 'Editer une photo sur l&apos;article',
+        'new_item' => 'Nouvelle photo sur l&apos;article',
+        'all_items' => 'Tout les articles',
+        'view_item' => 'Voir sur l&apos;article',
+        'search_items' => 'Chercher photo sur l&apos;article',
+        'not_found' =>  'Aucune photo trouvée sur l&apos;article',
+        'not_found_in_trash' => 'Aucun article trouvée dans la corbeille',
         'parent_item_colon' => '',
-        'menu_name' => 'Ligne 1'
+        'menu_name' => 'Ajouter un article'
     );
     $args = array(
         'labels' => $labels,
@@ -28,7 +28,7 @@ function cpt_init() {
         'show_ui' => true,
         'show_in_menu' => true,
         'query_var' => true,
-        'rewrite' => array( 'slug' => 'ligne1' ),
+        'rewrite' => array( 'slug' => 'addarticle' ),
         'capability_type' => 'post',
         'has_archive' => true,
         'hierarchical' => false,
@@ -36,7 +36,7 @@ function cpt_init() {
         'supports' => array( 'title', 'thumbnail')
     );
 
-    register_post_type('ligne1', $args );
+    register_post_type('addarticle', $args );
 }
 
 add_action('init', 'cpt_init');
