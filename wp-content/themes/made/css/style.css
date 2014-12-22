@@ -85,7 +85,6 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -124,38 +123,14 @@ table {
   border-spacing: 0;
 }
 /* FIN RESET */
-body {
-  background: #B3BAB9;
-}
-.ligneune {
+.col-md-3 img {
   width: 100%;
-  height: 150px;
-  background-color: red;
+  height: 250px;
 }
-.ligneune .col-md-3 {
-  height: 100%;
-}
-.ligneune img {
-  width: 100%;
-  height: 100%;
-}
-.lignedeux {
-  width: 100%;
-  height: 150px;
-  background-color: white;
-}
-.lignetrois {
-  width: 100%;
-  height: 150px;
-  background-color: blue;
-}
-.lignequatre {
-  width: 100%;
-  height: 150px;
-  background-color: brown;
-}
-.lignecinq {
-  width: 100%;
-  height: 150px;
-  background-color: yellow;
+.col-md-3 h1 {
+  font-size: 5em;
+  position: absolute;
+  z-index: 500;
+  text-align: center;
+  color: white;
 }
