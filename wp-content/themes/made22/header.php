@@ -10,19 +10,16 @@
 
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css" type="text/css" media="screen" />
 		
-		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js" type="text/css" media="screen" />
+		    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js" type="text/css" media="screen" />
 
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css" type="text/css" media="screen" />
 
+        <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
 
+        <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/html5lightbox.js"></script>
+ 
+  </head>
 
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/html5lightbox.js"></script>
-   </head>
-
-   <body>
-   	<header>
-   			<img src="<?php bloginfo('template_directory'); ?>/img/iim.png" alt="iim">
-   	</header>
+<body>
    
    		

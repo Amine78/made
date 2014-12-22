@@ -126,88 +126,38 @@ table {
 body {
   margin: 50px;
 }
-.row {
-  margin-left: 100px;
-  margin-right: 100px;
-}
 .slide {
-  width: 4900px;
-  margin-top: 200px;
+  width: 1800px;
+  height: 800px;
   background: none repeat scroll 0% 0% #FFC0CB;
-  height: 456px;
   position: absolute;
-  margin-bottom: 170px;
   white-space: nowrap;
   overflow-y: hidden;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
   float: left;
 }
-.slide .caption h1 {
-  font-size: 5em;
-  position: absolute;
-  z-index: 500;
-  text-align: center;
-  color: white;
+.slide .imgmarg {
+  margin-left: 10px;
 }
-.slide .caption img {
-  height: 460px;
-  width: 430px;
+.slide .imgmarg img {
+  width: 100%;
+  height: 150px;
   float: left;
   z-index: 2;
+  border: solid black 1px;
+  margin-left: 10px;
 }
-.caption {
-  opacity: 0;
-  z-index: 1;
-}
-.caption:hover {
-  opacity: 1;
-}
-footer {
-  height: 50px;
-  float: left;
-  margin-top: 705px;
+.slide #logo {
   width: 100%;
-  text-align: center;
-}
-footer nav {
-  position: fixed;
-  margin-bottom: 50px;
-}
-footer nav ul {
-  color: white;
-  list-style-type: none;
-  padding-left: 75px;
-  margin-bottom: 50px;
-}
-footer nav ul li {
-  list-style-type: none;
-  line-height: 20px;
-  color: white;
-  margin: auto;
-  text-align: center;
-  width: 180px;
+  height: 10px;
+  background-color: red;
   float: left;
 }
-footer nav ul li img {
-  height: 75px;
-  width: 75px;
+.slide #logo #logomid {
+  z-index: 1000;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
   float: left;
-  margin-left: 50px;
-  margin-bottom: 50px;
-}
-header {
-  height: 200px;
-  float: left;
-  position: fixed;
-  text-align: center;
-  width: 100%;
-  margin-bottom: 100px;
-}
-header img {
-  width: 200px;
-  height: 200px;
-  margin: auto;
-  text-align: center;
-  position: fixed;
 }
