@@ -13,7 +13,7 @@ function cpt_init() {
         'add_new_item' => 'Ajouter une nouvelle photo pour l&apos;article',
         'edit_item' => 'Editer une photo sur l&apos;article',
         'new_item' => 'Nouvelle photo sur l&apos;article',
-        'all_items' => 'Tout les articles',
+        'all_items' => 'Tous les articles',
         'view_item' => 'Voir sur l&apos;article',
         'search_items' => 'Chercher photo sur l&apos;article',
         'not_found' =>  'Aucune photo trouvée sur l&apos;article',
@@ -38,6 +38,7 @@ function cpt_init() {
 
     register_post_type('addarticlefirst', $args );
 
+
     $labels = array(
         'name' => 'Ajouter un article',
         'singular_name' => 'lignehaut',
@@ -45,7 +46,7 @@ function cpt_init() {
         'add_new_item' => 'Ajouter une nouvelle photo pour l&apos;article',
         'edit_item' => 'Editer une photo sur l&apos;article',
         'new_item' => 'Nouvelle photo sur l&apos;article',
-        'all_items' => 'Tout les articles',
+        'all_items' => 'Tous les articles',
         'view_item' => 'Voir sur l&apos;article',
         'search_items' => 'Chercher photo sur l&apos;article',
         'not_found' =>  'Aucune photo trouvée sur l&apos;article',
@@ -77,7 +78,7 @@ function cpt_init() {
         'add_new_item' => 'Ajouter une nouvelle photo pour l&apos;article',
         'edit_item' => 'Editer une photo sur l&apos;article',
         'new_item' => 'Nouvelle photo sur l&apos;article',
-        'all_items' => 'Tout les articles',
+        'all_items' => 'Tous les articles',
         'view_item' => 'Voir sur l&apos;article',
         'search_items' => 'Chercher photo sur l&apos;article',
         'not_found' =>  'Aucune photo trouvée sur l&apos;article',
@@ -109,7 +110,7 @@ function cpt_init() {
         'add_new_item' => 'Ajouter une nouvelle photo pour l&apos;article',
         'edit_item' => 'Editer une photo sur l&apos;article',
         'new_item' => 'Nouvelle photo sur l&apos;article',
-        'all_items' => 'Tout les articles',
+        'all_items' => 'Tous les articles',
         'view_item' => 'Voir sur l&apos;article',
         'search_items' => 'Chercher photo sur l&apos;article',
         'not_found' =>  'Aucune photo trouvée sur l&apos;article',

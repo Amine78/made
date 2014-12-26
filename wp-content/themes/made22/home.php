@@ -1,55 +1,90 @@
 <?php get_header(); ?>
 
-	<?php $my_query = new WP_Query(array('post_type' => 'addarticleup', 'orderby' => 'date', 'order'=>'DESC', 'posts_per_page' => '15')); ?>
-	
-				<div class="slide">
-					<div class="container-fluid">
-						<div class="row">
-					<?php while ($my_query->have_posts()) : $my_query->the_post();?>
-						<div class="col-md-1 imgmarg">
-			                <img src='<?php the_field('addimage') ?>'>
-						</div>
-					<?php endwhile; ?>
+<?php $my_query = new WP_Query(array('post_type' => 'addarticlefirst', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '10')); ?>
 
-					<div id="logo">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/logomid.png" alt="logo" id="logomid">
-					</div>
+<div class="slide">
+    <div class="container-fluid">
 
-	<?php $my_query = new WP_Query(array('post_type' => 'addarticledown', 'orderby' => 'date', 'order'=>'DESC', 'posts_per_page' => '15')); ?>
+        <!-- Première page -->
 
-					<?php while ($my_query->have_posts()) : $my_query->the_post();?>
-						<div class="col-md-1 imgmarg">
-			               	<img src='<?php the_field('addimage') ?>'>
-						</div>
-					<?php endwhile; ?>
-                    
-             
-                		</div>
-					</div>
-				</div>
+            <div class="row">
+
+                <!-- Première ligne -->
+
+                <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                    <div class="col-md-1">
+                        <img src='<?php the_field('addimagefirst') ?>'>
+                    </div>
+                      
+                <?php endwhile; ?>
 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.mousewheel.min.js"></script>
-<script>
-$(document).ready(function() {
-    $('html, body, *').mousewheel(function(e, delta) {
-        this.scrollLeft -= (delta * 40);
-        e.preventDefault();
-    });
-});
-$( document ).ready(function() {
-    $("[rel='tooltip']").tooltip();    
- 
-    $('.caption').hover(
-        function(){
-            $(this).find('.caption').slideDown(250); //.fadeIn(250)
-        },
-        function(){
-            $(this).find('.caption').slideUp(250); //.fadeOut(205)
-        }
-    ); 
-});
-</script>
+            </div>
+
+                <!-- Deuxième ligne -->
+            <div class="row">
+
+
+                <?php $my_query = new WP_Query(array('post_type' => 'addarticlesecond', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '15')); ?>
+
+                <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                    <div class="col-md-1">
+                        <img src='<?php the_field('addimagesecond') ?>'>
+                    </div>
+                <?php endwhile; ?>
+
+            </div>
+
+                <!-- Barre logo -->
+                <div class="block_logo">
+
+                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/logomid.png" alt="logo" id="logomid"> -->
+
+                </div>
+
+
+                <!-- Troisième ligne -->
+
+                <div class="row">
+
+
+
+                    <?php $my_query = new WP_Query(array('post_type' => 'addarticlethird', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '6')); ?>
+
+
+                    <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                        <div class="col-md-1">
+                            <img src='<?php the_field('addimagethird') ?>'>
+                        </div>
+                    <?php endwhile; ?>
+
+
+                </div>
+
+                <!-- Quatrième ligne -->
+
+                <div class="row">
+
+                    <?php $my_query = new WP_Query(array('post_type' => 'addarticlefourth', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '6')); ?>
+
+
+                    <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                        <div class="col-md-1">
+                            <img src='<?php the_field('addimagefourth') ?>'>
+                        </div>
+                    <?php endwhile; ?>
+
+
+                </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+
 
 <?php get_footer(); ?>
