@@ -22,6 +22,6 @@
 
 <body>
 
-  <h1 style="text-align:center; color:red;">HEADER</h1>
+  <h1 class="title">Institut de l'internet et du Multimédia</h1>
    
    		

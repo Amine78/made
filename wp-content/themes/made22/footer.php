@@ -1,6 +1,13 @@
-<!-- <div id="linefoot"></div>
 
-<img src="<?php echo get_template_directory_uri(); ?>/img/logomid.png" alt="logo" id="logomid"> -->
+    <h1 id="titlefoot">Retrouvez nous sur : </h1>
+
+    <a href="https://www.facebook.com/Institut.Internet.Multimedia?fref=ts" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="logo" id="margleft" class="logorsfoot"/></a>
+
+    <a href="https://twitter.com/iimparis" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt="logo" class="logorsfoot"/></a>
+
+    
+
+    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-iim.png" alt="logo" id="logoiimfoot"/>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.mousewheel.min.js"></script>

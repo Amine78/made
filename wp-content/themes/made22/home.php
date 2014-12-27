@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php $my_query = new WP_Query(array('post_type' => 'addarticlefirst', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '10')); ?>
+<?php $my_query = new WP_Query(array('post_type' => 'addarticlefirst', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '15')); ?>
 
 <div class="slide">
     <div class="container-fluid">
@@ -13,9 +13,10 @@
 
                 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
                     <div class="col-md-1">
-                        <img src='<?php the_field('addimagefirst') ?>'>
+                        <div class="view view-first">  
+                             <img src='<?php the_field('addimagefirst') ?>'> 
+                        </div>
                     </div>
-                      
                 <?php endwhile; ?>
 
 
@@ -29,32 +30,30 @@
 
                 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
                     <div class="col-md-1">
-                        <img src='<?php the_field('addimagesecond') ?>'>
+                        <div class="view view-first">  
+                             <img src='<?php the_field('addimagesecond') ?>'> 
+                        </div>
                     </div>
                 <?php endwhile; ?>
 
             </div>
 
-                <!-- Barre logo -->
-                <div class="block_logo">
-
-                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/logomid.png" alt="logo" id="logomid"> -->
-
-                </div>
 
 
                 <!-- Troisième ligne -->
 
-                <div class="row">
+                <div class="row margin_top">
 
 
 
-                    <?php $my_query = new WP_Query(array('post_type' => 'addarticlethird', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '6')); ?>
+                    <?php $my_query = new WP_Query(array('post_type' => 'addarticlethird', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '15')); ?>
 
 
                     <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
                         <div class="col-md-1">
-                            <img src='<?php the_field('addimagethird') ?>'>
+                            <div class="view view-first">  
+                                <img src='<?php the_field('addimagethird') ?>'>
+                            </div>
                         </div>
                     <?php endwhile; ?>
 
@@ -65,12 +64,14 @@
 
                 <div class="row">
 
-                    <?php $my_query = new WP_Query(array('post_type' => 'addarticlefourth', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '6')); ?>
+                    <?php $my_query = new WP_Query(array('post_type' => 'addarticlefourth', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '15')); ?>
 
 
                     <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
                         <div class="col-md-1">
-                            <img src='<?php the_field('addimagefourth') ?>'>
+                            <div class="view view-first">  
+                                 <img src='<?php the_field('addimagefourth') ?>'> 
+                            </div>
                         </div>
                     <?php endwhile; ?>
 
@@ -81,6 +82,16 @@
     </div>
 
 </div>
+
+<!-- Barre logo -->
+<div class="block_logo">
+
+  <img src="<?php echo get_template_directory_uri(); ?>/img/logomid.png" alt="logo" id="logomid">
+
+</div>
+
+
+
 
 
 

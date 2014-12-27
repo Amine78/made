@@ -126,7 +126,6 @@ table {
 .slide {
   width: 2300px;
   height: 650px;
-  margin-left: 50px;
   background: none repeat scroll 0% 0% #ffffff;
   position: absolute;
   white-space: nowrap;
@@ -134,32 +133,66 @@ table {
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
   float: left;
+  margin-bottom: 20px;
 }
-.slide img {
+.slide .view img {
+  display: block;
   width: 100%;
   height: 150px;
   float: left;
   z-index: 2;
 }
-.slide .block_logo {
+.slide .view-first img {
+  transition: all 0.2s linear;
+}
+.slide .view-first:hover img {
+  transform: scale(1.1);
+}
+.block_logo {
   width: 100%;
   height: 20px;
   background-color: #F4913B;
-  float: left;
+  position: fixed;
+  margin-top: 300px;
 }
-.slide .block_logo #logomid {
+.block_logo #logomid {
   z-index: 1000;
   display: block;
-  position: absolute;
+  margin-top: -45px;
   margin-right: auto;
   margin-left: auto;
-  width: inherit;
 }
-#linefoot {
-  width: 30%;
-  margin-right: auto;
-  margin-left: auto;
-  border: solid black 2px;
+.margin_top {
+  margin-top: 20px;
+}
+.title {
+  text-transform: uppercase;
+  font-size: 17px;
+  margin: 19px;
+  font-family: Avenir;
+  margin-left: 50px;
+}
+#logoiimfoot {
+  position: fixed;
+  margin-top: 740px;
+  left: 85%;
+  width: 200px;
+  height: 70px;
+}
+#margleft {
+  margin-left: 260px;
+}
+.logorsfoot {
+  margin-top: 740px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+}
+#titlefoot {
+  position: fixed;
+  margin-top: 750px;
+  margin-left: 50px;
   float: left;
-  position: absolute;
+  font-size: 1.5em;
+  color: black;
 }
