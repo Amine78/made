@@ -10,6 +10,8 @@
 
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css" type="text/css" media="screen" />
 
+        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/animate.css" type="text/css" media="screen" />
+
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css" type="text/css" media="screen" />
 		
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js" type="text/js" media="screen" />

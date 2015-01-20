@@ -125,24 +125,22 @@ table {
 /* FIN RESET */
 
 body{
-  width: 2300px;
+  width: 100%;
   height: 100%;
+  overflow: hidden;
 
-.slide{
-  width: 2300px;
-  height: 100%;
-  background: none repeat scroll 0% 0%;
-  position: absolute;
-  -webkit-overflow-scrolling: touch;
-  float: left;
-}
+  .imgcustom{
+    float:left;
+    width: 240px;
+    margin:0! important;
+  }
 
 .block_logo{
   width: 100%;
   height: 20px;
   background-color: #F4913B;
   position: fixed;
-  margin-top: 22%;
+  margin-top: 25%;
   #logomid{
     z-index: 1000;
     display: block;
@@ -151,6 +149,27 @@ body{
     margin-left: auto;
 
   }
+}
 
+  #bouton{
+    width: 240px;
+    height: 240px;
+    background-color: #F4913B;
+    float: right;
+    text-align: center;
+    overflow: hidden;
+      #boutnext{
+        margin-top: 35%;
+      }
+        &:hover{
+          background-color: white;
+          -webkit-transition: all 1.5s ease;
+          -moz-transition: all 1.5s ease;
+          -ms-transition: all 1.5s ease;
+          -o-transition: all 1.5s ease;
+          transition: all 1.5s ease;
+        }
+  }
 }
-}
+
+
