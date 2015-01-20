@@ -1,11 +1,32 @@
-<?php get_header(); ?>
-<?php if (have_posts()) : ?> <p class="title"> Hey ! Il y a des Posts ! </p> 
-	<?php while (have_posts()) : the_post(); ?>
-	 <div class="post"> <h3 class="post-title"> 
-	 	<a href="<?php the_permalink(); ?>">
-	 		<?php the_title(); ?></a> </h3> 
-	 		<p class="post-info"> Posté le <?php the_date(); ?> dans <?php the_category(', '); ?> par <?php the_author(); ?>. </p> 
-	 		<div class="post-content"> <?php the_content(); ?> </div>
-	 		 </div> <?php endwhile; ?> 
-<?php else : ?> <p class="nothing"> Il n'y a pas de Post à afficher ! </p> <?php endif; ?>
-<?php get_footer(); ?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Made In IIM </title>
+
+<!-- The Swipebox plugin -->
+<link href="<?php bloginfo('template_directory'); ?>/assets/swipebox/swipebox.css" rel="stylesheet" />
+
+<!-- The main CSS file -->
+<link href="<?php bloginfo('template_directory'); ?>/assets/css/style.css" rel="stylesheet" />
+
+<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+<?php
+ $my_query = new WP_Query(array('post_type' => 'ligne1', 'orderby' => 'title', 'order'=>'ASC', 'posts_per_page' => '4'));?> 			<?php while ($my_query->have_posts()) : $my_query->the_post();?>					
+						<a class="swipebox show" src='<?php the_field('ligne1')?>'
+
+	<?php	 endwhile; ?>
+<div id="gallery"></div>
+
+<!-- JavaScript Includes --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+<script src="<?php bloginfo('template_directory'); ?>/assets/swipebox/jquery.swipebox.min.js"></script> 
+<script src="/assets/js/jquery.loadImage.js"></script> 
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/script.js"></script>
+</body>
+</html>

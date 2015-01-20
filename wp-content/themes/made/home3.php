@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<<<<<<< HEAD
+
 	<div class="ligneune">
 		<?php $my_query = new WP_Query(array('post_type' => 'ligne1', 'orderby' => 'title', 'order'=>'ASC', 'posts_per_page' => '4')); ?>
 			<div class="container-fluid">
@@ -16,7 +16,7 @@
 				</div>
 			</div>
 	</div>    
-=======
+
 	<?php $my_query = new WP_Query(array('post_type' => 'addarticle', 'orderby' => 'date', 'order'=>'DESC', 'posts_per_page' => '5')); ?>
 			<div class="container-fluid">
 				<div class="row">
@@ -29,7 +29,7 @@
 					
 				</div>
 			</div>
->>>>>>> 6d559b31740648199ec46ad6d450c157905ddedb
+
 
 
 

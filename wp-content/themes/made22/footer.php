@@ -3,7 +3,7 @@
 
     <a href="https://www.facebook.com/Institut.Internet.Multimedia?fref=ts" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="logo" id="margleft" class="logorsfoot"/></a>
 
-    <a href="https://twitter.com/iimparis" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt="logo" class="logorsfoot"/></a>
+    <a href="https://twitter.com/iimparis"  classtarget="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt="logo" class="logorsfoot"/></a>
 
     
 
