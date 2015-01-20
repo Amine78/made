@@ -123,22 +123,26 @@ table {
   border-spacing: 0;
 }
 /* FIN RESET */
-.slide {
+body {
   width: 2300px;
-  height: 650px;
-  background: none repeat scroll 0% 0% #ffffff;
+  height: 100%;
+}
+body .slide {
+  width: 2300px;
+  height: 100%;
+  background: none repeat scroll 0% 0%;
   position: absolute;
   -webkit-overflow-scrolling: touch;
   float: left;
 }
-.block_logo {
+body .block_logo {
   width: 100%;
   height: 20px;
   background-color: #F4913B;
   position: fixed;
-  margin-top: 300px;
+  margin-top: 22%;
 }
-.block_logo #logomid {
+body .block_logo #logomid {
   z-index: 1000;
   display: block;
   margin-top: -45px;
