@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Wall/Grid Gallery (jQuery Plugin)</title>
+
+        <link rel="shortcut icon" href="../../assets/gui/images/dop-icon.png" />
+        <link rel="stylesheet" type="text/css" href="../../assets/gui/css/style.css" />
+        
+        <link rel="stylesheet" type="text/css" href="../../DOPWallGridGallery/assets/gui/css/jquery.jscrollpane.css" />
+        <link rel="stylesheet" type="text/css" href="../../DOPWallGridGallery/assets/gui/css/jquery.dop.WallGridGallery.css" />
+
+        <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/JavaScript" src="../../DOPWallGridGallery/assets/js/jquery.mousewheel.js"></script>
+        <script type="text/JavaScript" src="../../DOPWallGridGallery/assets/js/jquery.jscrollpane.min.js"></script>
+        <script type="text/JavaScript" src="../../DOPWallGridGallery/assets/js/jquery.dop.WallGridGallery.js"></script>
+
+        <script type="text/JavaScript">
+            $(document).ready(function(){                
+                $('#galleryContainer').DOPWallGridGallery({'SettingsFilePath': '../../DOPWallGridGallery/json/settings3.json', 
+                                                           'ContentFilePath':'../../DOPWallGridGallery/json/content3.json'});
+            });            
+        </script>
+    </head>
+    <body>        
+        <div id="wrapper">
+            <div id="header">
+                <h1 id="site-title">
+                    <a href="" title="Wall/Grid Gallery (jQuery Plugin)">Wall/Grid Gallery (jQuery Plugin)</a>
+                </h1>
+                <div id="works"><img src="../../assets/gui/images/works.png" alt="" /></div>
+            </div>
+            
+            <div id="main">
+		<div id="container">
+                    <div id="content">
+                        <div id="nav-top" class="navigation" style="width: 900px; font-size: 14px; margin: 0 0 30px 0">
+                            <div class="nav-previous">
+                                <a href="../example2">
+                                    <span class="meta-nav">←</span>
+                                    Previous Example                                    
+                                </a>
+                            </div> 
+                        </div>
+                        <h2 class="entry-title">Example 3</h2>
+                        <div class="entry-meta">&nbsp;</div>
+        		<div>
+                            <div class="entry-content">
+                                <div id="galleryContainer"></div>
+                                <p>
+                                    With the Wall/Grid Gallery you can easily change thumbnail sizes, colors, navigation, lightbox position … and much more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="footer">
+                <div id="w3c-valid">
+                    <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" /></a>
+                </div>		
+                <div id="colophon">
+                    <div id="site-info">
+                        <a href="http://dopdemo.net/jquery/thumbnail-gallery/" title="Thumbnail Gallery (jQuery Plugin)">Wall/Grid Gallery (jQuery Plugin)</a>
+                    </div>
+                    <div id="site-generator">
+                        Powered by <a href="http://www.dopdemo.net" title="DOP Demo" style="background:none;">DOP Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
