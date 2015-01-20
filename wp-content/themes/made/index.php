@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,3 +31,8 @@
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/script.js"></script>
 </body>
 </html>
+=======
+<?php get_header(); ?>
+
+<?php get_footer(); ?>
+>>>>>>> 5d3aad6e0bdbdb8aea3bc59c908d582b31c13df7
