@@ -10,12 +10,21 @@
 
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css" type="text/css" media="screen" />
 
+        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/animate.css" type="text/css" media="screen" />
+
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css" type="text/css" media="screen" />
+<<<<<<< HEAD
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/videobox.css" type="text/css" media="screen" />
 		
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js" media="screen"></script>" 
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/mootools.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/swfobject.js"></script>
+=======
+
+        <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
+>>>>>>> a1604cd5a9644ef895293cc9cf161c46917f06ad
 
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/videobox.js"></script>
 		   </head>
