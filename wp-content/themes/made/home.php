@@ -6,7 +6,15 @@
 
                 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-                    <a href="https://www.youtube.com/watch?v=<?php the_field('addvideofirst')?>" rel="vidbox 800 600"><img class="imgcustom animated fadeIn" src='<?php the_field('addimagefirst') ?>'/></a>
+                    <div class="view view-first">
+                        <img class="imgcustom animated fadeIn" src='<?php the_field('addimagefirst') ?>'/>
+                        <div class="mask"></div>
+                        <div class="content">
+                            <h2><?php the_field('nomprenomfirst') ?></h2>
+                            <p><?php the_field('descriptiffirst') ?></p>
+                            <a href="https://www.youtube.com/watch?v=<?php the_field('addvideofirst')?>" rel="vidbox 800 600" class="info">En savoir plus</a>
+                        </div>
+                    </div>
 
                 <?php endwhile; ?>
 
@@ -16,7 +24,15 @@
 
                 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-                    <a href="https://www.youtube.com/watch?v=<?php the_field('addvideosecond')?>" rel="vidbox 800 600"><img class="imgcustom animated fadeIn" src='<?php the_field('addimagesecond') ?>'/></a>
+                    <div class="view view-first">
+                        <img class="imgcustom animated fadeIn" src='<?php the_field('addimagesecond') ?>'/>
+                        <div class="mask"></div>
+                        <div class="content">
+                            <h2><?php the_field('nomprenomsecond') ?></h2>
+                            <p><?php the_field('descriptifsecond') ?></p>
+                            <a href="https://www.youtube.com/watch?v=<?php the_field('addvideosecond')?>" rel="vidbox 800 600" class="info">En savoir plus</a>
+                        </div>
+                    </div>
 
                 <?php endwhile; ?>
 
@@ -26,7 +42,15 @@
 
                 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-                    <a href="https://www.youtube.com/watch?v=<?php the_field('addvideothird')?>" rel="vidbox 800 600"><img class="imgcustom animated fadeIn" src='<?php the_field('addimagethird') ?>'/></a>
+                    <div class="view view-first">
+                        <img class="imgcustom animated fadeIn" src='<?php the_field('addimagethird') ?>'/>
+                        <div class="mask"></div>
+                        <div class="content">
+                            <h2><?php the_field('nomprenomthird') ?></h2>
+                            <p><?php the_field('descriptifthird') ?></p>
+                            <a href="https://www.youtube.com/watch?v=<?php the_field('addvideothird')?>" rel="vidbox 800 600" class="info">En savoir plus</a>
+                        </div>
+                    </div>
 
                 <?php endwhile; ?>
 
@@ -36,7 +60,15 @@
 
                 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-                    <a href="https://www.youtube.com/watch?v=<?php the_field('addvideofourth')?>" rel="vidbox 800 600"><img class="imgcustom animated fadeIn" src='<?php the_field('addimagefourth') ?>'/></a> 
+                    <div class="view view-first">
+                        <img class="imgcustom animated fadeIn" src='<?php the_field('addimagefourth') ?>'/>
+                        <div class="mask"></div>
+                        <div class="content">
+                            <h2><?php the_field('nomprenomfourth') ?></h2>
+                            <p><?php the_field('descriptiffourth') ?></p>
+                            <a href="https://www.youtube.com/watch?v=<?php the_field('addvideofourth')?>" rel="vidbox 800 600" class="info">En savoir plus</a>
+                        </div>
+                    </div>
 
                 <?php endwhile; ?>
 
