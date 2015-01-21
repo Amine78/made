@@ -16,7 +16,7 @@
 
                 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-                    <img class="imgcustom animated fadeIn" src='<?php the_field('addimagesecond') ?>'/> 
+                    <a href="https://www.youtube.com/watch?v=<?php the_field('addvideosecond')?>" rel="vidbox 800 600"><img class="imgcustom animated fadeIn" src='<?php the_field('addimagesecond') ?>'/></a>
 
                 <?php endwhile; ?>
 
@@ -26,7 +26,7 @@
 
                 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-                    <img class="imgcustom animated fadeIn" src='<?php the_field('addimagethird') ?>'/>
+                    <a href="https://www.youtube.com/watch?v=<?php the_field('addvideothird')?>" rel="vidbox 800 600"><img class="imgcustom animated fadeIn" src='<?php the_field('addimagethird') ?>'/></a>
 
                 <?php endwhile; ?>
 
@@ -36,7 +36,7 @@
 
                 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-                    <img class="imgcustom animated fadeIn" src='<?php the_field('addimagefourth') ?>'/> 
+                    <a href="https://www.youtube.com/watch?v=<?php the_field('addvideofourth')?>" rel="vidbox 800 600"><img class="imgcustom animated fadeIn" src='<?php the_field('addimagefourth') ?>'/></a> 
 
                 <?php endwhile; ?>
 
