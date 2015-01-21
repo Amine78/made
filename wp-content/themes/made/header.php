@@ -11,10 +11,13 @@
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css" type="text/css" media="screen" />
 
         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/videobox.css" type="text/css" media="screen" />
 		
-		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js" type="text/js" media="screen" />
+		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js" media="screen"></script>" 
+		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/mootools.js"></script>
+		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/swfobject.js"></script>
 
+		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/videobox.js"></script>
+		   </head>
 
-   </head>
-
-   <body>
+		   <body>
