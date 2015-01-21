@@ -6,7 +6,7 @@
 
                 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-                    <img class="imgcustom" src='<?php the_field('addimagefirst') ?>'> 
+                    <img class="imgcustom animated fadeIn" src='<?php the_field('addimagefirst') ?>'/>
 
                 <?php endwhile; ?>
 
@@ -16,7 +16,7 @@
 
                 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-                    <img class="imgcustom" src='<?php the_field('addimagesecond') ?>'> 
+                    <img class="imgcustom animated fadeIn" src='<?php the_field('addimagesecond') ?>'/> 
 
                 <?php endwhile; ?>
 
@@ -26,7 +26,7 @@
 
                 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-                    <img class="imgcustom" src='<?php the_field('addimagethird') ?>'>
+                    <img class="imgcustom animated fadeIn" src='<?php the_field('addimagethird') ?>'/>
 
                 <?php endwhile; ?>
 
@@ -36,11 +36,11 @@
 
                 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-                    <img class="imgcustom" src='<?php the_field('addimagefourth') ?>'> 
+                    <img class="imgcustom animated fadeIn" src='<?php the_field('addimagefourth') ?>'/> 
 
                 <?php endwhile; ?>
 
-                <div id="bouton">
+                <div id="bouton" class="animated fadeIn">
                     <img id="boutnext" class="animated bounceInDown" src='<?php bloginfo('template_directory'); ?>/img/boutnext.png'>
                 </div>
 
