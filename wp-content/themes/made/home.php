@@ -6,7 +6,7 @@
 
                 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-                    <img class="imgcustom animated fadeIn" src='<?php the_field('addimagefirst') ?>'/>
+                    <a href="https://www.youtube.com/watch?v=<?php the_field('addvideofirst')?>" rel="vidbox 800 600"><img class="imgcustom animated fadeIn" src='<?php the_field('addimagefirst') ?>'/></a>
 
                 <?php endwhile; ?>
 
