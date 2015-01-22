@@ -1,22 +1,26 @@
 <?php get_header(); ?>
 
-                <!-- Première ligne -->
 
+            <div id="gallery" class="row">
+                
+            
+                <!-- Première ligne -->
+                
 				<?php $my_query = new WP_Query(array('post_type' => 'addarticlefirst', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '8')); ?>
 
                 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-                    <a href="https://www.youtube.com/watch?v=<?php the_field('addvideofirst')?>" rel="vidbox 800 600"><img class="imgcustom animated fadeIn" src='<?php the_field('addimagefirst') ?>'/></a>
-
+                    <a href="https://www.youtube.com/watch?v=<?php the_field('addvideofirst')?>" class="vignette" rel="vidbox 800 600"><img class="imgcustom animated fadeIn" src='<?php the_field('addimagefirst') ?>'/></a>
+             
                 <?php endwhile; ?>
-
+               
                 <!-- Deuxième ligne -->
 
                 <?php $my_query = new WP_Query(array('post_type' => 'addarticlesecond', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '8')); ?>
 
                 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-                    <a href="https://www.youtube.com/watch?v=<?php the_field('addvideosecond')?>" rel="vidbox 800 600"><img class="imgcustom animated fadeIn" src='<?php the_field('addimagesecond') ?>'/></a>
+                    <a href="https://www.youtube.com/watch?v=<?php the_field('addvideosecond')?>" rel="vidbox 800 600"><img class="imgcustom animated fadeIn img-responsive vignette" src='<?php the_field('addimagesecond') ?>'/></a>
 
                 <?php endwhile; ?>
 
@@ -26,7 +30,7 @@
 
                 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-                    <a href="https://www.youtube.com/watch?v=<?php the_field('addvideothird')?>" rel="vidbox 800 600"><img class="imgcustom animated fadeIn" src='<?php the_field('addimagethird') ?>'/></a>
+                    <a href="https://www.youtube.com/watch?v=<?php the_field('addvideothird')?>" rel="vidbox 800 600"><img class="imgcustom animated fadeIn vignette" src='<?php the_field('addimagethird') ?>'/></a>
 
                 <?php endwhile; ?>
 
@@ -36,18 +40,20 @@
 
                 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-                    <a href="https://www.youtube.com/watch?v=<?php the_field('addvideofourth')?>" rel="vidbox 800 600"><img class="imgcustom animated fadeIn" src='<?php the_field('addimagefourth') ?>'/></a> 
+                    <a href="https://www.youtube.com/watch?v=<?php the_field('addvideofourth')?>" rel="vidbox 800 600" class="vignette"><img class="imgcustom animated fadeIn" src='<?php the_field('addimagefourth') ?>'/></a> 
 
                 <?php endwhile; ?>
 
-                <div id="bouton" class="animated fadeIn">
-                    <img id="boutnext" class="animated bounceInDown" src='<?php bloginfo('template_directory'); ?>/img/boutnext.png'>
+                <div id="bouton" class="animated fadeIn imgcustom">
+                    <img id="boutnext" class="animated bounceInDown img-responsive" src='<?php bloginfo('template_directory'); ?>/img/boutnext.png'>
                 </div>
-
-<div class="block_logo">
+                <div class="block_logo">
 
   <img src="<?php echo get_template_directory_uri(); ?>/img/logomid.png" alt="logo" id="logomid">
 
 </div>
+
+</div>
+
 
 <?php get_footer(); ?>
