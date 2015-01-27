@@ -127,7 +127,6 @@ table {
 body{
   width: 100%;
   height: 100%;
-  background: green;
   overflow: hidden;
 
     h1{
@@ -144,7 +143,7 @@ body{
   height: 20px;
   background-color: #F4913B;
   position: fixed;
-  margin-top: 25%;
+  margin-top: 24%;
   #logomid{
     z-index: 1000;
     display: block;
@@ -177,6 +176,7 @@ body{
 }
 
 
+
 #gallery{
   width: auto;
   height:auto;
@@ -196,23 +196,51 @@ body .imgcustom {
 .vignette{
   float: left;
 }
+#bouton{
+  width:220px;
+
+}
+.content {
+    height: 100% !important;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100% !important;
+}
+@media(min-width: 768px) {
+  .block_logo{display: none;}
+
+}
 /***  responsive 1280px****/
-@media (max-width: 1280px) {
+@media (max-width: 1300px) {
   body .imgcustom {width: 160px;}
   #bouton{
   width:160px;
 
 }
 #gallery {
-    height: 800px;
-    width: 1280px;
-}
-body{
+    height: 100%;
+    width: 100%;
 
+}
+
+.view  {
+    height: 160px !important;
+
+    width: 160px !important;
+}
+
+}
+.block_logo{display: block;}
+@media(max-width: 600px) {
+.view {
+    height: 236px !important;
+    width: 200px !important;
 }
 }
 /***  responsive 768px****/
-@media screen and (max-width: 768px) {
+@media(max-width: 768px) {
 body .imgcustom {
     float: left;
     margin: 0 !important;
@@ -227,4 +255,118 @@ body .imgcustom {
 
 }
 .block_logo{display: none;}
+.view{height: 248px !important;
+width: 248px !important;}
 }
+
+@media (max-width: 320px){
+  body .imgcustom {
+    float: left;
+    height: 280px;
+    margin: 0 !important;
+    width: 320px;
+}
+.view{
+  width: 500px !important;
+  height: 280px !important;
+}
+}
+/* HOVER */
+
+.view {
+    width: 240;
+    height: 240px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+.view .mask, .view .content {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+    display: block;
+    position: relative
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+.view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+    width: 100%;
+    text-align: center;
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+.view-first img { 
+    transition: all 0.2s linear;
+}
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(219,127,8, 0.7); 
+    transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first p { 
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+.view-first a.info{
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.view-first:hover img { 
+    transform: scale(1.1);
+} 
+.view-first:hover .mask { 
+    opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-first:hover p {
+    transition-delay: 0.1s;
+}
+.view-first:hover a.info {
+    transition-delay: 0.2s;
+}
+
